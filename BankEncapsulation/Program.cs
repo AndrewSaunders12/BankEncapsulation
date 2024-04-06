@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             BankAccount account = new BankAccount();
-            Console.WriteLine("How would you like to continue /Deposit /Withdraw /Check Balance");
+            Console.WriteLine("How would you like to continue/n Deposit/t Withdraw/t Check Balance");
             string userInput = Console.ReadLine();
             account.Pin();
 
