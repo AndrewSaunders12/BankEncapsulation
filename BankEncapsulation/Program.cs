@@ -5,21 +5,21 @@
         static void Main(string[] args)
         {
             BankAccount account = new BankAccount();
-            Console.WriteLine("How would you like to continue/n Deposit/t Withdraw/t Check Balance");
+            Console.WriteLine("How would you like to continue\n Deposit\t Withdraw\t Check Balance");
             string userInput = Console.ReadLine();
             account.Pin();
+            
 
 
-
-            if (userInput == "Balance")
+            if (userInput.ToLower() == "balance")
             {
                 account.GetBalance();
             }
-            if (userInput == "Withdraw")
+            if (userInput.ToLower() == "withdraw")
             {
                 account.Withdraw(); 
             }
-            if (userInput == "Deposit")
+            if (userInput.ToLower() == "deposit")
             {
                 account.Deposit();
             }
